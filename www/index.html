@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>onlineCV</title>
     </head>
     <body>
       
         <header>
+            <div class="nav-left">
+                <label>
+                    <input type="checkbox">
+                    <span class="check"></span>
+                </label>
+            </div>
+
             <div class="menu-toggler">
                 <div class="bar half start"></div>
                 <div class="bar"></div>
                 <div class="bar half end"></div>
             </div>
-
+    
             <nav class="top-nav">
                 <ul class="nav-list">
                     <li>
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li>
                         <a href="#about" class="nav-link">About</a>
@@ -41,6 +51,7 @@
                 </ul>
             </nav>
 
+            <div id="home"></div>
             <div class="landing-text">
                 <h1>Lee Leibrandt</h1>
                 <h6>UI | UX Designer and Web Developer</h6>
@@ -63,22 +74,16 @@
                         Outside my developer life, I love the great outdoors. Im activley involve with my hobbies cycling, running and hiking.
                         I love to experience new things outside my comfort zone.                 
                     </p>
-                    <div class="social-media">
+                    <div class="f_social_icon">
                         <ul class="nav-list">
                             <li>
-                                <a href="#" class="icon-link">
-                                    <i id="icon" class="fa fa-facebook fa-10x" aria-hidden="true"></i>
-                                </a>
+                                <a href="#" class="fab fa-github"></a>
                             </li>
                             <li>
-                                <a href="#" class="icon-link">
-                                    <i id="icon" class="fa fa-instagram fa-10x" aria-hidden="true"></i>
-                                </a>
+                                <a href="#" class="fab fa-linkedin"></a>
                             </li>
                             <li>
-                                <a href="#" class="icon-link">
-                                    <i id="icon" class="fa fa-twitter fa-10x" aria-hidden="true"></i>
-                                </a>
+                                <a href="#" class="fab fa-facebook"></a>
                             </li>
                         </ul>
                     </div>
@@ -110,7 +115,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
-                    <div class="skill" data-aos="fade-in" data-aos-delay="900">
+                    <!--<div class="skill" data-aos="fade-in" data-aos-delay="900">
                         <img src="img/08.gif" alt="">
                         <h1>Technologies</h1>
                         <p> 
@@ -121,7 +126,7 @@
                             <li>JQuery</li>
                             <li>Java Script</li>
                         </p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section>
@@ -135,14 +140,17 @@
             </div>
             <div class="portfolio-item">
                 <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                    <img src="img/00.png" alt=""> 
+                    <img src="img/store.svg" style="height:450px; width: 450px;"  alt=""> 
                 </div>
                 <div class="portfolio-description has-margin-right" data-aos="fade-left" data-aos-delay="600">
                     <h6>Web Development</h6>
                     <h1>Ecommerce Website</h1>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Online clothing store where users can purchase their favorite brand. 
+                        Website has features as login, register & reset password system, user profile, 
+                        online store, cart and checkout functionality. I included admin panel to database get overall
+                        view to everything on project. Beautiful layout 
+                        and animations for user friendly.
                     </p>
                     <a href="#" class="cta">View Details</a>
                 </div>
@@ -152,25 +160,27 @@
                     <h6>Web Design</h6>
                     <h1>Todo Task Application</h1>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Simple but efficient task application to help user with task management. 
+                        The functionality allows users to add, update and delete taskes. Addition to the application
+                        I added a calender feature so that users can organise as well as to add upcomming events.
                     </p>
                     <a href="#" class="cta">View Details</a>
                 </div>
                 <div class="portfolio-img has-margin-left" data-aos="fade-left" data-aos-delay="1200">
-                    <img src="img/01.png" alt=""> 
+                    <img src="img/todoist_bg.svg" style="height:500px; width: 500px;"  alt=""> 
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
-                    <img src="img/03.png" alt=""> 
+                    <img src="img/memorable-experiences.svg" style="height:450px; width: 450px;"  alt="img"> 
                 </div>
                 <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">       
                     <h6>Web Design</h6>
-                    <h1>Questionnaire</h1>
+                    <h1>Hotel Booking</h1>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Hotel comparism and booking website. Allows users to book a hotel of there choosing
+                       out of a selected option and view each hotel benefits and what it has to offer to them.
+                       Once a hotel is chosen, conformation email is sent to the user.
                     </p>
                     <a href="#" class="cta">View Details</a>
                 </div>
@@ -178,15 +188,15 @@
             <div class="portfolio-item">
                 <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
                     <h6>Web Design</h6>
-                    <h1>Product Layout</h1>
+                    <h1>Questionnaire</h1>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fun marvel quiz design to test users knowlege about the marvel universe. 
+                        Quiz has a grading system and provides instant feedback for user.
                     </p>
                     <a href="#" class="cta">View Details</a>
                 </div>
                 <div class="portfolio-img has-margin-left" data-aos="fade-left" data-aos-delay="1200">
-                    <img src="img/02.png" alt=""> 
+                    <img src="img/DtM0pwHXgAANQtc.jpg" style="height:450px; width: 450px;" alt=""> 
                 </div>
             </div>
         </section> 
@@ -208,8 +218,8 @@
                         <li class="date" data-date="2017 (December)">
                             <h1>Bride Cycles</h1>
                             <p>
-                                Worked as assistent technician adn front line. 
-                                My task was to assist customers with their purchases, aswell
+                                Worked as assistent technician and front line. 
+                                My task was to assist customers with their purchases, as well
                                 mechanical work assisting technicians.
                             </p>
                         </li>
@@ -217,7 +227,7 @@
                             <h1>Spec Savers</h1>
                             <p>
                                 Worked as assistent technician. 
-                                I perform taskes preparing and fixing glasses as well ans eye scanning
+                                I perform taskes preparing and fixing glasses as well as eye scanning
                                 for optometrist.
                             </p>
                         </li>
@@ -226,42 +236,67 @@
             </div>
         </section>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
             <path fill="#6b4986" fill-opacity="0.5" d="M0,64L20,69.3C40,75,80,85,120,112C160,139,200,181,240,186.7C280,192,320,160,360,170.7C400,181,440,235,480,245.3C520,256,560,224,600,197.3C640,171,680,149,720,133.3C760,117,800,107,840,106.7C880,107,920,117,960,144C1000,171,1040,213,1080,218.7C1120,224,1160,192,1200,186.7C1240,181,1280,203,1320,197.3C1360,192,1400,160,1420,144L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
-        </svg>
+        </svg>-->
 
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Contact</h1>
-                    <h6>Let's work together</h6>
+        <footer class="new_footer_area bg_color contact" id="contact">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p>Lets collarborate</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">SEND</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Technologies</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a>HTML</a></li>
+                                    <li><a>CSS</a></li>
+                                    <li><a>JQuery</a></li>
+                                    <li><a>JAVA SCRIPT</a></li>
+                                    <li><a>PHP</a></li>
+                                    <li><a>React</a></li>
+                                    <li><a>MYSQL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Contact</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a>Lee Leibrandt</a></li>
+                                    <li><a>leeleibrandt9@gmail.com</a></li>
+                                    <li><a>+24 65 288 5279</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Social</h3>
+                                <div class="f_social_icon">
+                                    <a class="fab fa-facebook"></a>
+                                    <a class="fab fa-twitter"></a>
+                                    <a class="fab fa-linkedin"></a>
+                                    <a class="fab fa-pinterest"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <form action="" data-aos="fade-up" data-aos-delay="300">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your full name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                    <label for="services">Services:</label>
-                    <select name="services" id="services">
-                        <option value="">Web Design</option>
-                        <option value="">Web Development</option>
-                        <option value="">Web Design/Development</option>
-                    </select>
-                    <label for="subject">Subject</label>
-                    <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
-                    <input type="submit" value="SUBMIT">
-                </form>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
             </div>
-        </section>
-
-        <div class="copyright">
-            <a href="index.html#">
-                <button class="up" id="up" >
-                    <i id="iconUp" class="fa fa-caret-square-o-up" aria-hidden="true"></i>
-                </button>
-            </a>
-            <p>&copy; 2020 Lee Leibrandt</p>
-        </div>
+        </footer>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=Your_API_Key"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
