@@ -101,21 +101,26 @@ input[type="checkbox"]:checked ~ .check:after{
 
 .section-heading h1{
     font-size: 3.5rem;
-    color: rgba(255,255,255, .3);
+    color: rgb(219, 218, 218);
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
     position: relative;
     margin-bottom: 1rem;
 }
 
 .section-heading h1{
     font-size: 5rem;
-    color: silver;
+    color: rgb(219, 218, 218);
 }
 
 .section-heading h6{
     font-size: 1.6rem;
     font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 2rem; 
 }
 
 .has-margin-right{
@@ -261,12 +266,13 @@ li{
 
 .about-heading h1{
     font-size: 10rem;
+    font-weight: 70s0;
     opacity: .3;
 }
 
 .about-heading h6{
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 3rem;
+    font-weight: 500;
 }
 
 .profile-img{
@@ -622,6 +628,13 @@ h1, h2, h3, h4, h5, h6 {
     .section-heading h1{
         font-size: 3rem;
         color:silver;
+    }
+    .section-heading h6{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-top: 3rem; 
     }
     .about-details .nav-list{
         flex-direction: initial;

@@ -19,3 +19,28 @@ $(document).ready(function()
     });
 
 });
+
+(function (){
+    "use strict";
+
+    document.addEventListener( 'deviceready', onDeviceReady.bind(this), false);
+
+    function onDeviceReady(){
+        document.getElementById("getlocation").addEventListener('click', getpostioninfo);
+    };
+    function getpostioninfo(){
+        var options = {
+            maximumAge: 3600000,
+            timeout: 300,
+            enableHighAccuracy: true
+        };
+        navigator.geolocation.watchPosition(onSuccess, onError, option);
+        function onSuccess(position){
+            alert('latitude :' + position.coords.lastitude+"\n"+
+            "longitude :" + position.coords.longitude);
+        }
+        function onError(error){
+            alert("Error "+error);
+        }
+    }
+})
