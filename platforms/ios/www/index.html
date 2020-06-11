@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>onlineCV</title>
     </head>
+
     <body>
       
         <header>
@@ -21,10 +22,6 @@
                     <span class="check"></span>
                 </label>
             </div>
-
-            <!--<button class="btn" id="getlocation">
-                LOCATION
-            </button>-->
 
             <div class="menu-toggler">
                 <div class="bar half start"></div>
@@ -81,10 +78,10 @@
                     <div class="f_social_icon">
                         <ul class="nav-list">
                             <li>
-                                <a href="#" class="fab fa-github"></a>
+                                <a href="https://github.com/LeeLeibrandt" class="fab fa-github"></a>
                             </li>
                             <li>
-                                <a href="#" class="fab fa-linkedin"></a>
+                                <a href="https://www.linkedin.com/in/lee-leibrandt-5563521a5/" class="fab fa-linkedin"></a>
                             </li>
                             <li>
                                 <a href="#" class="fab fa-facebook"></a>
@@ -121,19 +118,8 @@
                             innovative technologies in fulfilling taskes.
                         </p>
                     </div>
-                    <!--<div class="skill" data-aos="fade-in" data-aos-delay="900">
-                        <img src="img/08.gif" alt="">
-                        <h1>Technologies</h1>
-                        <p> 
-                            Programming languages such as: <br>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>PHP</li>
-                            <li>JQuery</li>
-                            <li>Java Script</li>
-                        </p> 
-                    </div>-->
                 </div>
+                
             </div>
         </section>
 
@@ -168,7 +154,7 @@
                     <p> 
                         Simple but efficient task application to help user with task management. 
                         The functionality allows users to add, update and delete taskes. Addition to the application
-                        I added a calender feature so that users can organise as well as to add upcomming events.
+                        I added a calendar feature so that users can organise as well as to add upcomming events.
                     </p>
                     <a href="https://github.com/LeeLeibrandt/todoTaskApplication" class="cta">View Details</a>
                 </div>
@@ -242,10 +228,6 @@
             </div>
         </section>
 
-        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-            <path fill="#6b4986" fill-opacity="0.5" d="M0,64L20,69.3C40,75,80,85,120,112C160,139,200,181,240,186.7C280,192,320,160,360,170.7C400,181,440,235,480,245.3C520,256,560,224,600,197.3C640,171,680,149,720,133.3C760,117,800,107,840,106.7C880,107,920,117,960,144C1000,171,1040,213,1080,218.7C1120,224,1160,192,1200,186.7C1240,181,1280,203,1320,197.3C1360,192,1400,160,1420,144L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
-        </svg>-->
-
         <footer class="new_footer_area bg_color contact" id="contact">
             <div class="new_footer_top">
                 <div class="container">
@@ -254,10 +236,16 @@
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                                 <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
                                 <p>Lets collarborate</p>
-                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <form>
+                                      <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                                     <button class="btn btn_get btn_get_two" type="submit">SEND</button>
                                 </form>
+                                <br>
+                                <p>Get your location</p>
+                                <button class="btn btn_get btn_get_two" type="button" onclick="showPosition();">Location</button>
+                                <div id="result">
+                                    <!--Position information will be inserted here-->
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
@@ -308,7 +296,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+       <!--<script type="text/javascript" src="js/index.js"></script>-->
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
