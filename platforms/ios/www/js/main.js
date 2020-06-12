@@ -30,9 +30,9 @@ function showPosition() {
      // If geolocation is available, try to get the visitor's position
      if(navigator.geolocation) {
          navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-         result.innerHTML = "Getting the position information...";
+         result.innerHTML = "Getting location information...";
      } else {
-         alert("Sorry, your browser does not support HTML5 geolocation.");
+         alert("Sorry, your browser unsupported.");
      }
 };
  
@@ -85,7 +85,7 @@ function showMap(position) {
 // Define callback function for failed attempt
 function showError(error) {
     if(error.code == 1) {
-        result.innerHTML = "You've decided not to share your position, but it's OK. We won't ask you again.";
+        result.innerHTML = "Your location is not enabled.";
     } else if(error.code == 2) {
         result.innerHTML = "The network is down or the positioning service can't be reached.";
     } else if(error.code == 3) {

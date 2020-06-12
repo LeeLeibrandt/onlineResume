@@ -47,7 +47,7 @@ input[type="checkbox"]{
     cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
-    transition: ease-in 0.5s;
+    transition: ease-in 1s;
     margin: 1rem;
 }
 input[type="checkbox"]:checked ~ .check {
@@ -354,7 +354,7 @@ li{
 }
 
 .cta{
-    color: #eee;
+    color: lightgrey;
     margin-top: 2rem;
     font-size: 1.5rem;
 }
